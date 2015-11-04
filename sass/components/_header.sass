@@ -1,0 +1,72 @@
+.site-header
+  .wrapper
+    width: 264px
+    margin: auto
+
+  h1, p
+    margin-top: 0
+    padding: 20px
+    height: 87px
+    color: $gray-lighter
+    line-height: 21px
+    text-transform: uppercase
+    font-weight: 900
+    float: left
+    height: $site-header-height
+
+  h1
+    background-color: $toc-title-color
+    font-size: 16px
+    text-align: center
+    letter-spacing: 4px
+    width: 118px
+
+    a:link
+      color: $gray-lighter
+      text-decoration: none
+
+  p
+    position: relative
+    background-color: $toc-secondary-color
+    font-size: 12px
+    line-height: 22px
+    letter-spacing: 2px
+    width: 146px
+
+    .notch
+      position: absolute
+      right: -20px
+      margin: 0
+      border-top: 10px solid transparent
+      border-left: 10px solid $toc-secondary-color
+      border-right: 10px solid transparent
+      border-bottom: 10px solid transparent
+      padding: 0
+      width: 0
+      height: 0
+      // ie6 height fix
+      font-size: 0
+      line-height: 0
+      // ie6 transparency fix
+      _border-right-color: pink
+      _border-left-color: pink
+      _filter: chroma(color=pink)
+
+      &.one
+        top: -10px
+      &.two
+        top: 11px
+      &.three
+        top: 32px
+      &.four
+        top: 53px
+      &.five
+        top: 74px
+      &.six
+        top: 95px
+        border-bottom: 0
+
+@media (max-width: $screen-sm-max)
+  .site-header
+    position: relative
+    z-index: +99

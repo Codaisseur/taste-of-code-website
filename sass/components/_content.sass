@@ -1,0 +1,19 @@
+.content-wrapper
+  @extend .col-md-10
+  @extend .col-md-offset-1
+
+  .content-column
+    @extend .col-md-4
+
+    &.middle
+      @extend .col-md-offset-4
+
+    font-weight: lighter
+    padding: 3em
+    text-align: center
+    line-height: 2em
+    letter-spacing: 1px
+
+    h2
+      font-weight: lighter
+      color: $toc-title-color

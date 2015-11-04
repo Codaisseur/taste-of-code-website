@@ -1,0 +1,13 @@
+.wrapper
+  @extend .row
+
+  &.cover
+    margin-top: -$site-header-height - 10px
+    padding-top: $site-header-height + 30px
+    background-size: cover
+    background-repeat: no-repeat
+    padding-bottom: $site-header-height
+
+@media (max-width: $screen-sm-max)
+  .wrapper.cover
+    padding-bottom: 0

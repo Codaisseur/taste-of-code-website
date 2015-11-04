@@ -1,0 +1,12 @@
+gzip_assets: off
+javascript_compressor: closure-compiler
+
+javascripts:
+  js/scripts-min:
+    - javascripts/bootstrap.min.js
+    - javascripts/lib/*.js
+    - js/src/app.js
+
+stylesheets:
+  css/styles-min:
+    - stylesheets/styles.css
