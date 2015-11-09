@@ -13,6 +13,8 @@
 
   &.main
     @extend .col-md-4
+    @extend .col-md-push-4
+
     background-color: transparentize($pane-color-main, 0.1)
     color: $main-pane-text-color
     text-align: center
@@ -71,6 +73,7 @@
 
     &.left
       @extend .col-md-offset-1
+      @extend .col-md-pull-3
 
     .top-bar
       padding: 0
@@ -94,22 +97,27 @@
 
 @media (min-width: $screen-md-min)
   .pane.main
-    margin: 4em -3% 0
+    margin: 4em 3% 0 0
     position: relative
     z-index: +1
 
   .pane.left.side
-    margin-left: 11.333333%
+    margin-left: 1.333333%
+
+@media (min-width: $screen-lg-min)
+  .pane.left.side
+    .pane-content
+      padding-right: 43%
 
   .pane.right.side
-    // margin-left: -2em
+    .pane-content
+      padding-left: 4em
 
 @media (max-width: $screen-sm-max)
-  .pane.side
+  .pane.right.side
     display: none
 
-  .pane.under
-    display: block
+  .pane.left.side
     text-align: center
 
     .pane-content

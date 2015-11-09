@@ -3027,7 +3027,7 @@ pre code {
   }
 
   /* line 50, ../../../../../../usr/local/opt/rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-  .col-md-pull-3 {
+  .col-md-pull-3, .pane.side.left {
     right: 25%;
   }
 
@@ -3097,7 +3097,7 @@ pre code {
   }
 
   /* line 40, ../../../../../../usr/local/opt/rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-  .col-md-push-4, .content-wrapper .content-column.middle {
+  .col-md-push-4, .content-wrapper .content-column.middle, .pane.main {
     left: 33.33333333%;
   }
 
@@ -8964,16 +8964,16 @@ footer .logos img {
   color: #faf5ef;
   text-align: center;
 }
-/* line 20, ../sass/components/_pane.sass */
+/* line 22, ../sass/components/_pane.sass */
 .pane.main h1 {
   font-weight: lighter;
   margin-bottom: 2em;
 }
-/* line 24, ../sass/components/_pane.sass */
+/* line 26, ../sass/components/_pane.sass */
 .pane.main p.cta {
   text-align: center;
 }
-/* line 27, ../sass/components/_pane.sass */
+/* line 29, ../sass/components/_pane.sass */
 .pane.main p.cta a.button.primary {
   background-color: #ffa076;
   color: #faf5ef;
@@ -8982,55 +8982,55 @@ footer .logos img {
   width: 60%;
   margin: 4em auto 1em;
 }
-/* line 37, ../sass/components/_pane.sass */
+/* line 39, ../sass/components/_pane.sass */
 .pane.main p.cta a.button.primary:hover {
   background-color: #ff9567;
   color: #f6eee3;
 }
-/* line 41, ../sass/components/_pane.sass */
+/* line 43, ../sass/components/_pane.sass */
 .pane.side {
   background-color: rgba(35, 39, 42, 0.9);
 }
-/* line 45, ../sass/components/_pane.sass */
+/* line 47, ../sass/components/_pane.sass */
 .pane.side.left {
   line-height: 2em;
   font-size: 1.8em;
 }
-/* line 49, ../sass/components/_pane.sass */
+/* line 51, ../sass/components/_pane.sass */
 .pane.side .pane-content {
   padding-right: 32%;
 }
-/* line 52, ../sass/components/_pane.sass */
+/* line 54, ../sass/components/_pane.sass */
 .pane.side .pane-content.code {
   padding-right: 12px;
 }
-/* line 55, ../sass/components/_pane.sass */
+/* line 57, ../sass/components/_pane.sass */
 .pane.side .pane-content.code p {
   font-family: "Roboto Mono", Menlo, Monaco, Consolas, "Courier New", monospace;
   margin: 0;
   letter-spacing: -2px;
 }
-/* line 60, ../sass/components/_pane.sass */
+/* line 62, ../sass/components/_pane.sass */
 .pane.side h2 {
   color: #ffa076;
   font-weight: lighter;
   font-size: 1.4em;
 }
-/* line 65, ../sass/components/_pane.sass */
+/* line 67, ../sass/components/_pane.sass */
 .pane.side p {
   color: #deddd9;
 }
-/* line 68, ../sass/components/_pane.sass */
+/* line 70, ../sass/components/_pane.sass */
 .pane.side p mark {
   color: #4eada9;
   background: none;
 }
-/* line 75, ../sass/components/_pane.sass */
+/* line 78, ../sass/components/_pane.sass */
 .pane.side .top-bar {
   padding: 0;
   line-height: 1em;
 }
-/* line 79, ../sass/components/_pane.sass */
+/* line 82, ../sass/components/_pane.sass */
 .pane.side .top-bar .pane-button {
   height: 15px;
   width: 15px;
@@ -9038,59 +9038,69 @@ footer .logos img {
   display: inline-block;
   margin-right: 5px;
 }
-/* line 86, ../sass/components/_pane.sass */
+/* line 89, ../sass/components/_pane.sass */
 .pane.side .top-bar .pane-button.close-button {
   background-color: #df6766;
 }
-/* line 89, ../sass/components/_pane.sass */
+/* line 92, ../sass/components/_pane.sass */
 .pane.side .top-bar .pane-button.minimize-button {
   background-color: #f1de5d;
 }
-/* line 92, ../sass/components/_pane.sass */
+/* line 95, ../sass/components/_pane.sass */
 .pane.side .top-bar .pane-button.maximize-button {
   background-color: #a2c93a;
 }
 
 @media (min-width: 992px) {
-  /* line 96, ../sass/components/_pane.sass */
+  /* line 99, ../sass/components/_pane.sass */
   .pane.main {
-    margin: 4em -3% 0;
+    margin: 4em 3% 0 0;
     position: relative;
     z-index: 1;
   }
 
-  /* line 101, ../sass/components/_pane.sass */
+  /* line 104, ../sass/components/_pane.sass */
   .pane.left.side {
-    margin-left: 11.333333%;
+    margin-left: 1.333333%;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 109, ../sass/components/_pane.sass */
+  .pane.left.side .pane-content {
+    padding-right: 43%;
+  }
+
+  /* line 113, ../sass/components/_pane.sass */
+  .pane.right.side .pane-content {
+    padding-left: 4em;
   }
 }
 @media (max-width: 991px) {
-  /* line 108, ../sass/components/_pane.sass */
-  .pane.side {
+  /* line 117, ../sass/components/_pane.sass */
+  .pane.right.side {
     display: none;
   }
 
-  /* line 111, ../sass/components/_pane.sass */
-  .pane.under {
-    display: block;
+  /* line 120, ../sass/components/_pane.sass */
+  .pane.left.side {
     text-align: center;
   }
-  /* line 115, ../sass/components/_pane.sass */
-  .pane.under .pane-content {
+  /* line 123, ../sass/components/_pane.sass */
+  .pane.left.side .pane-content {
     padding-right: 12px;
   }
 
-  /* line 118, ../sass/components/_pane.sass */
+  /* line 126, ../sass/components/_pane.sass */
   .pane .top-bar {
     display: none;
   }
 
-  /* line 121, ../sass/components/_pane.sass */
+  /* line 129, ../sass/components/_pane.sass */
   .pane.main {
     margin-top: -161px;
     padding-top: 161px;
   }
-  /* line 124, ../sass/components/_pane.sass */
+  /* line 132, ../sass/components/_pane.sass */
   .pane.main h1 {
     display: none;
   }
