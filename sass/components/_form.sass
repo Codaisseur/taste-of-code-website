@@ -17,18 +17,34 @@ input.button.primary
   @extend .col-md-10
   @extend .col-md-offset-1
 
-form
-  text-align: left
+  form
+    text-align: left
 
-  input.required,
-    @extend .form-control
-    font-weight: 400
+    .response
+      background: #8876FF
+      padding: 1.3em
 
-    &.datepart
-      display: inline
-      width: auto
+    .mc-field-group.form-group div.mce_inline_error
+      background-color: $primary-button-shadow-color
+      margin-top: 5px
+      border-radius: 3px
 
-  .selectize-control.single .selectize-input,
-  .selectize-control.single .selectize-input input,
-  .selectize-dropdown-content
-    font-weight: 400
+    .mc-field-group.form-group.size1of2
+      div.mce_inline_error
+        display: none !important
+
+        &:last-child
+          display: block !important
+
+    input.required,
+      @extend .form-control
+      font-weight: 400
+
+      &.datepart
+        display: inline
+        width: auto
+
+    .selectize-control.single .selectize-input,
+    .selectize-control.single .selectize-input input,
+    .selectize-dropdown-content
+      font-weight: 400

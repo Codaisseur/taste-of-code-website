@@ -3,3 +3,4 @@ _site
 .DS_store
 css/app.css
 js/app.js
+stylesheets/styles.css
