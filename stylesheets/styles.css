@@ -1765,7 +1765,7 @@ img {
 }
 
 /* line 81, ../../../../../../usr/local/opt/rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/_scaffolding.scss */
-.img-responsive {
+.img-responsive, .content-wrapper .content-column img {
   display: block;
   max-width: 100%;
   height: auto;
@@ -2417,7 +2417,7 @@ pre code {
 }
 
 /* line 11, ../../../../../../usr/local/opt/rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .pane.side, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .content-wrapper .content-column, .pane.main, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .content-wrapper, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .pane.side, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .content-wrapper .content-column, .pane.main, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, footer .logos, .content-wrapper, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -2947,7 +2947,7 @@ pre code {
 }
 @media (min-width: 992px) {
   /* line 27, ../../../../../../usr/local/opt/rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-  .col-md-1, .col-md-2, .col-md-3, .pane.side, .col-md-4, .content-wrapper .content-column, .pane.main, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .content-wrapper, .col-md-11, .col-md-12 {
+  .col-md-1, .col-md-2, .col-md-3, .pane.side, .col-md-4, .content-wrapper .content-column, .pane.main, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, footer .logos, .content-wrapper, .col-md-11, .col-md-12 {
     float: left;
   }
 
@@ -2997,7 +2997,7 @@ pre code {
   }
 
   /* line 35, ../../../../../../usr/local/opt/rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-  .col-md-10, .content-wrapper {
+  .col-md-10, footer .logos, .content-wrapper {
     width: 83.33333333%;
   }
 
@@ -3032,7 +3032,7 @@ pre code {
   }
 
   /* line 50, ../../../../../../usr/local/opt/rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-  .col-md-pull-4 {
+  .col-md-pull-4, .content-wrapper .content-column.htmlcss {
     right: 33.33333333%;
   }
 
@@ -3097,7 +3097,7 @@ pre code {
   }
 
   /* line 40, ../../../../../../usr/local/opt/rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-  .col-md-push-4 {
+  .col-md-push-4, .content-wrapper .content-column.middle {
     left: 33.33333333%;
   }
 
@@ -3147,7 +3147,7 @@ pre code {
   }
 
   /* line 60, ../../../../../../usr/local/opt/rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-  .col-md-offset-1, .content-wrapper, .pane.side.left {
+  .col-md-offset-1, footer .logos, .content-wrapper, .pane.side.left {
     margin-left: 8.33333333%;
   }
 
@@ -3162,7 +3162,7 @@ pre code {
   }
 
   /* line 60, ../../../../../../usr/local/opt/rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/bootstrap-sass-3.3.5.1/assets/stylesheets/bootstrap/mixins/_grid-framework.scss */
-  .col-md-offset-4, .content-wrapper .content-column.middle {
+  .col-md-offset-4 {
     margin-left: 33.33333333%;
   }
 
@@ -8908,6 +8908,22 @@ button.close {
     z-index: 99;
   }
 }
+/* line 1, ../sass/components/_footer.sass */
+footer {
+  background-color: #e9e5e2;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+/* line 6, ../sass/components/_footer.sass */
+footer .logos {
+  text-align: center;
+}
+/* line 11, ../sass/components/_footer.sass */
+footer .logos img {
+  height: 20px;
+  margin: 10px;
+}
+
 /* line 5, ../sass/components/_content.sass */
 .content-wrapper .content-column {
   font-weight: lighter;
@@ -8916,7 +8932,11 @@ button.close {
   line-height: 2em;
   letter-spacing: 1px;
 }
-/* line 17, ../sass/components/_content.sass */
+/* line 19, ../sass/components/_content.sass */
+.content-wrapper .content-column img {
+  margin: auto;
+}
+/* line 23, ../sass/components/_content.sass */
 .content-wrapper .content-column h2 {
   font-weight: lighter;
   color: #df6766;

@@ -4,15 +4,21 @@
 
   .content-column
     @extend .col-md-4
-
-    &.middle
-      @extend .col-md-offset-4
-
     font-weight: lighter
     padding: 3em
     text-align: center
     line-height: 2em
     letter-spacing: 1px
+
+    &.htmlcss
+      @extend .col-md-pull-4
+
+    &.middle
+      @extend .col-md-push-4
+
+    img
+      @extend .img-responsive
+      margin: auto
 
     h2
       font-weight: lighter
