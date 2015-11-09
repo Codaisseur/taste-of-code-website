@@ -13,6 +13,7 @@
 
 // Import Bootstrap for Sass
 @import "bootstrap";
+@import "vendor/selectize";
 
 // Components
 @import "components/layout";
@@ -21,3 +22,4 @@
 @import "components/content";
 @import "components/pane";
 @import "components/code";
+@import "components/form";

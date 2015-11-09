@@ -2,11 +2,10 @@ gzip_assets: off
 javascript_compressor: closure-compiler
 
 javascripts:
-  js/scripts-min:
-    - javascripts/bootstrap.min.js
-    - javascripts/lib/*.js
-    - js/src/app.js
+  js/app:
+    - javascripts/vendor/*.js
+    - javascripts/src/*.js
 
 stylesheets:
-  css/styles-min:
+  css/app:
     - stylesheets/styles.css
