@@ -11,4 +11,4 @@ github_username:  codaisseur
 # Build settings
 markdown: kramdown
 destination: ./_site
-exclude: ['scss','Gem*','Guard*','*.rb','.sass-cache','.git*','config.rb','sass','stylesheets','javascripts']
+exclude: ['scss','Gem*','Guard*','*.rb','.sass-cache','.git*','config.rb','sass','stylesheets','javascripts','README.md','.jekyll-metadata']
