@@ -2,9 +2,47 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta content="index,follow" name="robots">
 
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta content="free, code, workshop, taste, development, programming, learn, teach, sponsor" name="keywords">
+  <meta content="52.370529,4.893000" name="ICBM">
+  <meta content="52.370529;4.893000" name="geo.position">
+  <meta content="Amsterdam,, nl" name="geo.placename">
+  <meta content="NL" name="geo.region">
+  <meta name="twitter:card" value="summary">
+  <meta name="twitter:site" value="@tasteofcode">
+  <meta content="Taste <of> Code" property="og:site_name">
+  <meta content="Taste <of> Code" property="og:title">
+  <meta content="activity" property="og:type">
+  <meta content="http://tasteofcode.nl/" name="twitter:url">
+  <meta content="Amsterdam" property="og:locality">
+  <meta content="nl" property="og:country-name">
+  <meta content="52.37" property="og:latitude">
+  <meta content="4.89" property="og:longitude">
+  <meta content="http://tasteofcode.nl/images/social/taste-of-code-square.png" property="og:image">
+  <link href="http://tasteofcode.nl/" rel="canonical">
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
 
   <link rel="stylesheet" href="{{ "css/app.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
