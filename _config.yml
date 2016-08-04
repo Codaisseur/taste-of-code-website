@@ -1,8 +1,8 @@
 title: Taste of Code - Free beginner course to learn about programming
 email: info@tasteofcode.nl
 description: > # this means to ignore newlines until "baseurl:"
-  Dive into the fascinating world of code and learn the most wanted skill right
-  now. Sign up for a free immersive training program at an inspiring location.
+  Dive into the fascinating world of code. Sign up for our immersive beginner coding
+  workshop at an inspiring location and learn about the most wanted skill right now.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://tasteofcode.nl" # the base hostname & protocol for your site
 twitter_username: tasteofcode
