@@ -8,7 +8,12 @@
     padding-bottom: 0
     text-align: center
     letter-spacing: 1px
-    font-size: 2em
+
+    h3
+      font-size: 2em
+
+  .white-space
+    @extend .col-md-2
 
   .content-column
     @extend .col-md-4
@@ -16,6 +21,10 @@
     text-align: center
     line-height: 2em
     letter-spacing: 1px
+
+    &:hover
+      box-shadow: 2px 2px 5px #666
+      transition: box-shadow 200ms
 
     &.htmlcss
       @extend .col-md-pull-4
@@ -33,10 +42,20 @@
 
   p.social
     margin-top: 1.8em
+    margin-bottom: 2.7em
+
+    a
+      text-decoration: none
+      margin-right: 0.15em
+      margin-left: 0.15em
 
     img
-      height: 30px
+      height: 50px
       display: inline
+
+      &:hover
+        box-shadow: 2px 2px 5px #666
+        transition: box-shadow 200ms
 
 .nowrap
   white-space: nowrap
