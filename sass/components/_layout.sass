@@ -1,12 +1,18 @@
 .wrapper
   @extend .row
+  width: 100%
+
 
   &.cover
+    margin-left: 0 !important
+    margin-right: 0 !important
+
     margin-top: -$site-header-height - 10px
     padding-top: $site-header-height + 30px
     background-size: cover
     background-repeat: no-repeat
     padding-bottom: $site-header-height
+    box-sizing: border-box
 
 @media (max-width: $screen-sm-max)
   .wrapper.cover
