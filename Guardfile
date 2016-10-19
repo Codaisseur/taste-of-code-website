@@ -5,7 +5,7 @@ notification :off
 # Sass/Compass https://github.com/guard/guard-compass
 if File.exists?("./config.rb")
   guard :compass do
-    watch(%r{(.*)?(components\/)?(.*)?\.s[ac]ss$})
+    watch(%r{(.*)?((components|vendor)\/)?(.*)?\.s[ac]ss$})
   end
 end
 
