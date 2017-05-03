@@ -17,7 +17,7 @@ guard :jammit,
 end
 
 # Jekyll
-guard 'jekyll-plus', :config => ['_config.yml'] do
+guard 'jekyll-plus', :serve => true, :config => ['_config.yml'] do
   watch /.*/
   ignore /_site/
 end
