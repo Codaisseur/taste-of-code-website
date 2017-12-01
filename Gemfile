@@ -19,5 +19,5 @@ group :development do
 	gem 'guard-jammit'
 
 	# Faster LiveReload
-	gem 'yajl-ruby'
+	gem 'yajl-ruby', '~> 1.3.1'
 end
