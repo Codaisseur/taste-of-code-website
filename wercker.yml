@@ -18,6 +18,10 @@ build:
     - bundle-install
 
     - script:
+      name: Compile SASS
+      code: bundle exec compass compile
+
+    - script:
       name: Generate the site
       code: bundle exec jekyll build
 
