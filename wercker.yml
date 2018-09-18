@@ -1,0 +1,44 @@
+# This references the default nodejs container from
+# the Docker Hub: https://registry.hub.docker.com/_/node/
+# If you want Nodesource's container you would reference nodesource/node
+# Read more about containers on our dev center
+# http://devcenter.wercker.com/docs/containers/index.html
+box:
+  id: codaisseur/codaisseur-ci
+  tag: latest
+
+  # - mongo
+  # http://devcenter.wercker.com/docs/services/mongodb.html
+build:
+  # The steps that will be executed on build
+  # Steps make up the actions in your pipeline
+  # Read more about steps on our dev center:
+  # http://devcenter.wercker.com/docs/steps/index.html
+  steps:
+    - bundle-install
+
+    - script:
+      name: Compile SASS
+      code: bundle exec compass compile
+
+    - script:
+      name: Generate the site
+      code: bundle exec jekyll build
+
+  after-steps:
+    - slack-notifier:
+      url: $SLACK_URL
+      channel: development
+      username: Wercker
+
+deploy:
+  steps:
+  - script:
+    name: Deploy to S3
+    code: aws s3 sync _site/ s3://tasteofcode.nl
+
+  after-steps:
+  - slack-notifier:
+    url: $DEPLOYMENT_SLACK_URL
+    channel: $DEPLOYMENTS_SLACK_CHANNEL
+    username: Kubernetes via Wercker
